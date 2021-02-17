@@ -22,7 +22,6 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
-  color: $grayishBlue;
 }
 
 // Flexbox
@@ -40,4 +39,15 @@ a:hover {
   &-ai-c {
     align-items: center;
   }
+}
+
+//Buttons
+.button {
+  padding: 1rem 1.875rem;
+  background: linear-gradient(to right, $limeGreen, $brightCyan);
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  color: $white;
+  font-weight: 700;
 }
