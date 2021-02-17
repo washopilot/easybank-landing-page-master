@@ -24,6 +24,7 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
+  color: #9698a6;
 }
 
 .flex {
@@ -63,5 +64,9 @@ a:hover {
 
 .header__menu > span:not(:last-child) {
   margin-bottom: 3px;
+}
+
+.header__links a {
+  font-size: 0.875rem;
 }
 /*# sourceMappingURL=style.css.map */
