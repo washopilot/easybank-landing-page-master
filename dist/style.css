@@ -1,19 +1,71 @@
 @-webkit-keyframes fade-in {
   from {
+    visibility: hidden;
+    opacity: 0;
   }
-  50% {
+  1% {
+    visibility: visible;
+    opacity: 0;
   }
   to {
+    visibility: visible;
+    opacity: 1;
   }
 }
 
 @keyframes fade-in {
   from {
+    visibility: hidden;
+    opacity: 0;
   }
-  50% {
+  1% {
+    visibility: visible;
+    opacity: 0;
   }
   to {
+    visibility: visible;
+    opacity: 1;
   }
+}
+
+.fade-in {
+  -webkit-animation: fade-in 300ms ease-in-out forwards;
+          animation: fade-in 300ms ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 300ms ease-in-out forwards;
+          animation: fade-out 300ms ease-in-out forwards;
 }
 
 html {
@@ -80,13 +132,13 @@ button,
   font-weight: 700;
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 39.9375em) {
   .hide-for-mobile {
     display: none;
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .hide-for-desktop {
     display: none;
   }
@@ -107,7 +159,7 @@ button,
 }
 
 .header .overlay {
-  display: none;
+  visibility: hidden;
   position: fixed;
   left: 0;
   right: 0;
